@@ -1,0 +1,89 @@
+html {
+    height: 100%;
+    
+    margin: 0;
+  }
+
+  .cardlinks {
+    text-align: center;
+  }
+
+
+  body {
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    background: #eee;
+    
+    overflow: hidden;
+    touch-action: none;
+  }
+  
+  #bg {
+      min-height: 1em;
+      line-height: 1.6;
+      width: 100%;
+      background: #171E2E;
+      position: absolute;
+      top: 0;
+      left: 0;  
+      font-size: 20px;
+      font-family: "Roboto", Helvetica;  
+  }
+  
+  #Stocks {
+   display: flex;
+    min-height: 1em;
+    background: #171E2E;
+    color: #FFF;
+    padding: 2px;
+    xvertical-align: middle;
+    line-height: 1.4;
+    text-align: center;
+    transform: translateZ(0);
+    cursor: pointer;
+    font-size: 20px;
+    font-family: "Roboto", Helvetica;
+    animation-play-state: paused;
+    position: absolute;
+    top: 0;
+    left: 110%;
+    overflow: hidden;
+    
+    animation: scroll 30s linear 1s infinite;
+  }
+  
+  @keyframes scroll {
+      from {
+          transform: translateX(0%);
+      }
+      to {
+          transform: translateX(-160%);
+      }
+  }
+  
+  
+  #Stocks b {
+    font-weight: 300;
+  }
+  #Stocks i {
+    font-style: normal;
+  }
+  #Stocks .Name,
+  #Stocks .Label,
+  #Stocks .LastUpdated {
+    font-size: 0.7em;
+    line-height: 1;
+  }
+  #Stocks span {
+    white-space: nowrap;
+    display: inline-block;
+    padding: 0 5px;
+  }
+  #Stocks .Symbol,
+  #Stocks .Stat {
+    color: #88bd0a;
+  }
