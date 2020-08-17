@@ -17,3 +17,5 @@ document.addEventListener("DOMContentLoaded", () => {
     counter("count2", 100, 50, 2500);
     counter("count3", 0, 40, 3000);
    });
+
+   $('.carousel').carousel()
